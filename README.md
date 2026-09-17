@@ -271,5 +271,182 @@ complete professional experience
 skills that are not publicly visible
 verified years of experience
 ```
+## What I learned
+
+This project helped me understand how to convert a recruiting workflow into product logic:
+
+Recruiting judgment
+        ↓
+Rules + search strategy
+        ↓
+Evidence model
+        ↓
+Scoring logic
+        ↓
+Working software
+
+It also helped me think more deeply about explainability in AI-assisted recruiting workflows.
+
+## Built with
+
+Python 3
+GitHub REST API
+GitHub repository / user search
+Requirement parsing
+Skill + framework relationships
+Location-aware discovery
+Evidence-based scoring
+AI-assisted coding
+
+## Setup & Configuration
+
+This project runs locally with Python and connects to GitHub through the official GitHub REST API.
+
+1) Requirements
+
+You need:
+
+Python 3
+A GitHub account
+A GitHub Personal Access Token
+Internet access
+
+Check Python:
+
+python3 --version
+
+2) Install dependency
+
+The engine uses the requests Python package.
+
+Install it once:
+
+python3 -m pip install requests
+
+3) Create a GitHub API token
+
+Create a GitHub Personal Access Token from your GitHub account settings.
+
+The token is used only to authenticate API requests and increase GitHub API/search limits.
+
+Do not paste the token into the Python source code.
+
+Do not commit the token to GitHub.
+
+4) Add the token locally
+
+macOS / Linux:
+
+export GITHUB_TOKEN='YOUR_GITHUB_TOKEN'
+
+Check that it is loaded:
+
+python3 -c "import os; print(bool(os.getenv('GITHUB_TOKEN')))"
+
+Expected output:
+
+True
+
+The engine reads the token through:
+
+os.getenv("GITHUB_TOKEN")
+
+This keeps credentials outside the codebase.
+
+5) Run the engine
+
+From the folder containing the Python file:
+
+python3 universal_sourcing_engine.py
+
+Example:
+
+cd ~/Documents
+python3 universal_sourcing_engine.py
+
+If authentication is working, the terminal should show something similar to:
+
+API: authenticated | core 5000/5000 | search 30/30
+
+If no token is loaded, the engine can still run with much lower public GitHub API limits.
+
+## Authentication & Security
+
+Recommended approach:
+
+GitHub token
+    ↓
+Local environment variable
+    ↓
+Python engine
+    ↓
+GitHub API
+
+The repository should never contain:
+
+GitHub Personal Access Tokens
+Passwords
+API secrets
+.env files containing credentials
+
+Recommended .gitignore:
+
+.env
+.DS_Store
+__pycache__/
+*.pyc
+
+If a token is ever accidentally committed or shared publicly, revoke it immediately and create a new one.
+
+## GitHub API Notes
+
+The engine uses authenticated GitHub API requests for:
+
+User profiles
+Repositories
+README evidence
+Repository search
+User/location search
+Rate-limit checks
+
+Authentication improves API limits compared with anonymous access.
+
+GitHub still applies separate limits to different API resources, so very large sourcing runs may eventually need to wait for rate-limit reset.
+
+## Recommended Repository Structure
+
+universal-github-sourcing-engine/
+│
+├── universal_sourcing_engine.py
+├── README.md
+└── .gitignore
+
+Optional export-enabled versions can also include:
+
+sourcing_run_latest.json
+sourcing_candidates_latest.csv
+
+Avoid committing candidate-result files if they contain data you do not want publicly available.
+
+## Quick Start
+
+git clone https://github.com/YOUR_USERNAME/universal-github-sourcing-engine.git
+cd universal-github-sourcing-engine
+python3 -m pip install requests
+export GITHUB_TOKEN='YOUR_GITHUB_TOKEN'
+python3 universal_sourcing_engine.py
+
+That is enough to run the project locally.
+
+## Current limitation
+
+GitHub only shows public information.
+
+The engine therefore cannot reliably know:
+
+private repository work
+complete professional experience
+skills that are not publicly visible
+verified years of experience
 
 So GitHub evidence is used as a **sourcing signal**, not as a final hiring decision.
