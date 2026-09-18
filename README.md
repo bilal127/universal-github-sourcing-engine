@@ -1,37 +1,7 @@
-
 # AI-Assisted GitHub Sourcing Engine
 The engine runs locally in the terminal and fetches results from public/open-source GitHub data using API queries only - no scraping. It can be demonstrated live.
 
-### Turning a recruiter's manual GitHub sourcing process into a repeatable sourcing workflow
-
-I built this project around one question:
-
-> **Can the way a recruiter manually searches GitHub be converted into a transparent sourcing engine without giving up recruiter control?**
-
-I used **AI-assisted coding** to help turn my recruiting ideas into Python, test edge cases, debug issues, and iterate faster. The sourcing logic itself came from how I manually think about roles, search strategy, evidence, and candidate relevance.
-
----
-
-## The idea in one picture
-
-```text
-Recruiter gives input
-        ↓
-Understand the hiring need
-        ↓
-Expand the search intelligently
-        ↓
-Query GitHub public data
-        ↓
-Validate candidate evidence
-        ↓
-Rank + explain results
-        ↓
-Recruiter makes the decision
-
-
-<img width="729" height="829" alt="Screenshot 2026-09-19 at 1 11 00 AM" src="https://github.com/user-attachments/assets/5f9d711d-3d1b-4d7b-90ef-1ac6c0c85896" />
-
+<img width="729" height="829" alt="Screenshot 2026-09-19 at 1 11 00 AM" src="https://github.com/user-attachments/assets/961608b7-23bb-47b9-8a44-b47944fcf3c0" />
 
 ### The strongest difference between manual Github sourcing VS Github engine sourcing:
 
