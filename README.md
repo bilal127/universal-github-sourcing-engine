@@ -29,6 +29,45 @@ Rank + explain results
 Recruiter makes the decision
 ```
 
+### The strongest difference between manual Github sourcing VS Github engine sourcing:
+
+Manual GitHub search
+= find profiles
+
+Your engine
+= understand requirement
+  + expand discovery
+  + search
+  + validate evidence
+  + compare
+  + rank
+  + explain
+
+So instead of just searching:
+
+Kubernetes + Go + Terraform (usually light weight search made by recruiters)
+
+the engine can also understand that things like:
+
+EKS
+GKE
+Helm
+CNI
+ArgoCD
+all are related to infrastructure, kuberenetes on scale
+
+may be useful discovery signals, while still keeping the recruiter's original MUST/NICE requirements unchanged.
+
+And after discovery, engine does something manual GitHub search does not give you automatically:
+
+MUST coverage
+NICE coverage
+Evidence quality
+Role fit
+Location fit
+Freshness
+Why this candidate matched.
+
 ---
 
 ## 3 ways a recruiter can start
