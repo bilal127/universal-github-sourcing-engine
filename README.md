@@ -1,4 +1,5 @@
 # AI-Assisted GitHub Sourcing Engine
+The engine runs locally in the terminal and fetches results from public/open-source GitHub data using API queries only - no scraping. It can be demonstrated live.
 
 ### Turning a recruiter's manual GitHub sourcing process into a repeatable sourcing workflow
 
