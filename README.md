@@ -1,3 +1,5 @@
+<img width="809" height="797" alt="Screenshot 2026-09-19 at 1 11 49 AM" src="https://github.com/user-attachments/assets/3861cbb5-8888-44c2-b924-714b6d82a1b7" />
+<img width="729" height="829" alt="Screenshot 2026-09-19 at 1 11 00 AM" src="https://github.com/user-attachments/assets/5f9d711d-3d1b-4d7b-90ef-1ac6c0c85896" />
 # AI-Assisted GitHub Sourcing Engine
 The engine runs locally in the terminal and fetches results from public/open-source GitHub data using API queries only - no scraping. It can be demonstrated live.
 
