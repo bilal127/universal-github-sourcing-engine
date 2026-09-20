@@ -1,7 +1,7 @@
 # AI-Assisted GitHub Sourcing Engine
 The engine runs locally in the terminal and fetches results from public/open-source GitHub data using API queries only - no scraping. It can be demonstrated live.
 
-[Video Demonstration](https://drive.google.com/file/d/1iqhgdN_TPJkmSynIaf8yn1l30WbVDGeq/view?usp=drive_link)This video is all about how the engine understands the recruiters inputs, basic interactive flows to understand must/nice-to-have skills followed by triggering GitHub APIs, fetches candidate profiles from publicly available GitHub open-source data, & generates the final scoring results.
+[Video Demonstration:](https://drive.google.com/file/d/1iqhgdN_TPJkmSynIaf8yn1l30WbVDGeq/view?usp=drive_link) This video is all about how the engine understands the recruiters inputs, basic interactive flows to understand must/nice-to-have skills followed by triggering GitHub APIs, fetches candidate profiles from publicly available GitHub open-source data, & generates the final scoring results.
 
 <img width="729" height="829" alt="Screenshot 2026-09-19 at 1 11 00 AM" src="https://github.com/user-attachments/assets/961608b7-23bb-47b9-8a44-b47944fcf3c0" />
 
